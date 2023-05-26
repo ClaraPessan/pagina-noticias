@@ -1,0 +1,40 @@
+.container {
+    justify-content: center;
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 23% 35% 26%;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 20px;
+    grid-template-areas: "principais principais news"
+                         "titulo paragrafo news"
+                         "cards cards cards"; 
+}
+
+.titulo {
+    grid-area: titulo;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    
+}
+
+.paragrafo {
+    grid-area: paragrafo;
+    font-size: 13px;
+    color: var(--cinza-azulado-medio);
+}
+
+.principais {
+    grid-area: principais;
+}
+
+.principais img {
+    max-width: 100%;
+}
+
+
+@media (max-width: 755px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}

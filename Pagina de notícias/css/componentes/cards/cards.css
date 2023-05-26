@@ -1,0 +1,43 @@
+.cards {
+    grid-area: cards;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.card {
+    display: flex;
+    max-width: 300px;
+    gap: 20px;
+}
+
+.card img {
+    width: 80px;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.info-card h2{
+    color: var(--cinza-azulado-claro);
+}
+
+.info-card p {
+    color: var(--cinza-azulado-medio);
+    font-size: 13.4px;
+}
+
+.card h5:hover {
+    cursor: pointer;
+    color: var(--vermelho-claro);
+}
+
+@media (max-width: 755px) {
+    .cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
